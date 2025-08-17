@@ -3,6 +3,7 @@ package algoritmsPractice;
 public class Palindrome {
     public static void main(String[] args) {
 
+        // June-18 Jul12-
         // == Task-1 Check if string is Palindrome use StringBuilder
         // == Task-2 Check if int is Palindrome use StringBuilder
         // == Task-3 Check if int is Palindrome use forLoop and math
@@ -10,7 +11,21 @@ public class Palindrome {
         int target = 123456789;
 
 //        System.out.println(isPalindromeBoolean(12321));
-        System.out.println(isPalindromeStringB("Aba"));
+        //System.out.println(isPalindromeStringB("Aba"));
+
+
+        int num = target;
+        int reversed = 0;
+
+        while (num > 0 ) {
+            int last = num % 10;
+            reversed = (reversed * 10) + last;
+            num = num /10;
+
+        }
+        System.out.println(reversed);
+
+
     }
 
 
@@ -20,13 +35,6 @@ public class Palindrome {
         String reversed = new StringBuilder(word).reverse().toString();
         return reversed.equals(word);
     }
-
-
-
-
-
-
-
 
 
 
