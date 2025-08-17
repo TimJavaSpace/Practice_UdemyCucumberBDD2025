@@ -7,7 +7,7 @@ public class CountLetter {
     public static void main(String[] args) {
 
 
-      // 1-Task count how manu 't' we have use for loop
+      // 1-Task count how many 't' we have use for loop
       // 2-Task  count each letter using map, forLoop, If else
       // 3-Task count each letter using map.getDefaultContent
 
