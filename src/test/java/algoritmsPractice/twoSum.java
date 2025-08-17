@@ -1,17 +1,36 @@
+package algoritmsPractice;
+
 import java.util.HashMap;
 import java.util.Map;
-public class TwoSum {
+public class twoSum {
 
     public static void main(String[] args) {
+
+        System.out.println("Two sum");
+        // Jun-18 Jul-12
+        //  ==  Task-1 create method use nested for loop
+//        int[] res = twoSumLoop(new int[]{2, 7, 11, 15}, 17);
+//        System.out.println(res[0] + ", " + res[1]);
 
         //  ==  Task-1 create method use nested for loop
 //        int[] res = twoSumLoop(new int[]{2, 7, 11, 15}, 17);
 //        System.out.println(res[0] + ", " + res[1]);
+
 //
 //     // == Task-2 create method use HashMap return indexes of two num
 //            int[] resMap = twoSumMap(new int[]{ 1, 2, 3, 4, 5, 6}, 9);
 //            System.out.println(resMap[0] + ",map " + resMap[1]);
     }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,13 +60,13 @@ public class TwoSum {
             int current = nums[i];
             int needed = target - current;
 
-            if (map.containsKey(needed)) {   // If we've already seen the needed number, return the pair of indices
+            if (map.containsKey(needed)) {         // If we've already seen the needed number, return the pair of indices
                 return new int[]{map.get(needed), i};
             }
-            map.put(nums[i], i); // Otherwise, store the current number with its index in Map
+            map.put(nums[i], i);        // Otherwise, store the current number with its index in Map
         }
 
-        return new int[]{-1, -1};  // If no pair is found, return -1
+        return new int[]{-1, -1};      // If no pair is found, return -1
     }
 
      */

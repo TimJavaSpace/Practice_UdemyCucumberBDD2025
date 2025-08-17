@@ -7,9 +7,23 @@ public class CountLetter {
     public static void main(String[] args) {
 
 
-      // 1-Task count how many 't' we have use for loop
+        // jun 18 Jul-12
+      // 1-Task count how manu 't' we have use for loop
       // 2-Task  count each letter using map, forLoop, If else
       // 3-Task count each letter using map.getDefaultContent
+
+        String word = "ttemirrl  Aaaan";
+        char target = 't';
+        int count = 0;
+
+        Map<Character,Integer> map = new HashMap<>();
+
+
+        for (Character ch: word.toCharArray()){
+                map.put(ch, map.getOrDefault(ch,0)+1);
+        }
+
+        System.out.println(map);
 
 
 
@@ -52,7 +66,7 @@ public class CountLetter {
 //      for (int i = 0; i < word.length(); i++) {
 //        char current = word.charAt(i);
 //        int count1 = map.getOrDefault(current,0);   // Get the current count or use 0 if the letter is not yet in the map
-//        map.put(current,count1+1);    // Put the letter back into the map with the updated count
+//        map.put(current,count1+1);                  // Put the letter back into the map with the updated count
 //      }
 //
 //      // most short one
